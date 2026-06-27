@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Özgenin Mutfağı</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="top-header">
+    <img src="images/logo.png" alt="Özgenin Mutfağı Logo" class="logo">
+    <h1>Özgenin Mutfağı</h1>
+    <p>Ev yapımı • Taze • Katkısız</p>
+  </header>
+
+  <section class="hero">
+    <button class="slide-btn left" onclick="prevSlide()">‹</button>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="mini-title">Butik ev lezzetleri</span>
+        <h2>Günün özenle hazırlanan lezzetleri</h2>
+        <p>Ev sıcaklığında, taze ve sipariş üzerine hazırlanan özel tatlar.</p>
+        <a href="#menu" class="hero-btn">Menüyü İncele</a>
+      </div>
+
+      <div class="hero-photo">
+        <img id="heroImage" src="images/annekoftesi.png" alt="Yemek Görseli">
+      </div>
+    </div>
+
+    <button class="slide-btn right" onclick="nextSlide()">›</button>
+  </section>
+
+  <p class="image-note">
+    * Görseller temsilidir. Ürünler ev yapımı olduğundan görünüm farklılık gösterebilir.Gerçek görseller için iletişime geçiniz!
+  </p>
+
+  <section id="menu" class="menu-section">
+    <h2>Menümüz</h2>
+    <p class="menu-subtitle">Kategori seçebilir veya yemek adıyla arama yapabilirsiniz.</p>
+
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="Yemek ara...">
+    </div>
+
+    <div class="category-buttons">
+      <button class="category-btn active" data-category="all">Tümü</button>
+      <button class="category-btn" data-category="ana">Ana Yemekler</button>
+      <button class="category-btn" data-category="corba">Çorbalar</button>
+      <button class="category-btn" data-category="borek">Hamurişi</button>
+      <button class="category-btn" data-category="kurabiye">Kurabiyeler</button>
+      <button class="category-btn" data-category="tatli">Tatlılar</button>
+      <button class="category-btn" data-category="salata">Zeytinyağlılar &amp; Salatalar</button>
+    </div>
+
+    <div id="products" class="products"></div>
+  </section>
+
+  <section class="order-info">
+    <h2>Sipariş Vermek Çok Kolay</h2>
+    <p>Beğendiğiniz ürünleri WhatsApp üzerinden iletebilirsiniz.</p>
+  </section>
+
+  <a class="whatsapp-fixed" href="https://wa.me/905432564862" target="_blank">
+    💬 WhatsApp'tan Sipariş Ver
+    <span>Hızlı sipariş için tıkla</span>
+  </a>
+
+  <button class="up-btn" onclick="scrollToTop()">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
