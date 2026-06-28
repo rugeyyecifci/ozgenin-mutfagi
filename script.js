@@ -63,9 +63,9 @@ function renderProducts() {
 
       <div class="card-img-wrap">
         <img 
-          src="images/${product.image}" 
+          src="${product.image}" 
           alt="${product.name}" 
-          onerror="this.src='images/logo.png'"
+          onerror="this.src='logo.png'"
         >
       </div>
 
@@ -105,7 +105,7 @@ function showSlide() {
   heroImage.style.opacity = 0;
 
   setTimeout(() => {
-    heroImage.src = `images/${heroImages[currentSlide]}`;
+    heroImage.src = heroImages[currentSlide];
     heroImage.style.opacity = 1;
   }, 250);
 }
@@ -127,5 +127,4 @@ function scrollToTop() {
   });
 }
 
-// Her 3 saniyede bir otomatik değiştir
 setInterval(nextSlide, 3000);
